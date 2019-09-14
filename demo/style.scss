@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+}
+
+body {
+  background-color: #f3eef1;
+  font-family: 'IBM Plex Sans', sans-serif;
+}
+
+.app-container {
+  .demo-title {
+    font-size: 32px;
+    text-align: center;
+    margin: 16px;
+  }
+
+  .demo-container {
+    margin: 16px;
+    display: flex;
+    height: 800px;
+
+    .section-title {
+      font-size: 16px;
+      text-align: center;
+      margin-top: 8px;
+    }
+
+    .editable-list-container {
+      border: 2px solid #755d87;
+      flex: 1;
+      margin-right: 32px;
+    }
+
+    .current-list-container {
+      border: 2px solid #df8b75;
+      flex: 1;
+
+      .current-list {
+        .list-item {
+          white-space: nowrap;
+          max-width: 500px;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          display: block;
+        }
+      }
+    }
+  }
+}
