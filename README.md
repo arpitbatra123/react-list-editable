@@ -24,7 +24,7 @@ Don't forget to import the styles as well: ⚠️
 import 'react-list-editable/lib/react-list-editable.css';
 ```
 
-See below for an extended example 
+See below for an extended example: 
 
 ```js
 import React, { Component } from 'react';
@@ -67,8 +67,8 @@ export default class Example extends Component {
 You have to pass the following props to this component:
 
 - `list` -  The list of elements to edit. This is a required prop, otherwise what will you edit in the editable list ? 🤷🏻‍♂️
-- onListChange - A function which, on any updation of the list , will recieve the updated list as an argument.
-- placeholder - The placeholder to show in the field for adding a new element to a list.
+- `onListChange` - A function which, on any updation of the list , will recieve the updated list as an argument.
+- `placeholder` - The placeholder to show in the field for adding a new element to a list.
 
 ## <u>Demo</u>
 
