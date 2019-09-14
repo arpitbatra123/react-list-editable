@@ -1,4 +1,5 @@
 npm i
+npm run build
 npm link
 cd demo
 npm i
