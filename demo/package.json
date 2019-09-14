@@ -1,5 +1,5 @@
 {
-  "name": "EditableList demo",
+  "name": "react-list-editable-demo",
   "version": "1.0.0",
   "description": "Demo for react-list-editable component",
   "main": "index.js",
