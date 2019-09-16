@@ -1,7 +1,12 @@
 {
   "name": "react-list-editable",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A React component to render editable lists",
+  "homepage": "https://github.com/arpitbatra123/react-list-editable#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arpitbatra123/react-list-editable.git"
+  },
   "scripts": {
     "build": "webpack"
   },
