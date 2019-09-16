@@ -1,3 +1,5 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/c17e1d8c-c9bf-470e-98d0-5253ed2d7cf6/deploy-status)](https://app.netlify.com/sites/react-list-editable/deploys)
+
 # react-list-editable
 
 A [React](https://reactjs.org) component to render editable lists
@@ -39,6 +41,7 @@ export default class Example extends Component {
       list: ['🥳 Partying', '👩🏻‍🎨 Painting', '🛌🏻 Sleeping']
     };
   }
+  
   onListChange(newList) {
     this.setState({
       list: newList
@@ -48,11 +51,11 @@ export default class Example extends Component {
   render() {
     return (
       <div className='app-container'>
-            <EditableList
-              list={this.state.list}
-              onListChange={this.onListChange.bind(this)}
-              placeholder='Enter a value'
-            />
+        <EditableList
+          list={this.state.list}
+          onListChange={this.onListChange.bind(this)}
+          placeholder='Enter a value'
+        />
       </div>
     );
   }
