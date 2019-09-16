@@ -16,6 +16,6 @@
     "parcel": "^1.12.3"
   },
   "dependencies": {
-    "react-list-editable": "0.0.2"
+    "react-list-editable": "0.0.3"
   }
 }
