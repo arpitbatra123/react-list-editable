@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
-import EditableList from 'react-list-editable';
+import EditableList from '../src';
 
 import './style.scss';
 import 'react-list-editable/lib/react-list-editable.css';
