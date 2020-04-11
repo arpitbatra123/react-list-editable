@@ -8,7 +8,9 @@
     "url": "git+https://github.com/arpitbatra123/react-list-editable.git"
   },
   "scripts": {
-    "build": "webpack"
+    "build": "webpack",
+    "prepublish": "webpack",
+    "publish": "npx np"
   },
   "keywords": [
     "react"

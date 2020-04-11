@@ -1,9 +1,15 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
-import EditableList from '../src';
 
 import './style.scss';
+
+// Production imports
+import EditableList from 'react-list-editable';
 import 'react-list-editable/lib/react-list-editable.css';
+
+// Development imports
+// import EditableList from '../lib';
+// import '../lib/react-list-editable.css';
 
 class App extends Component {
   constructor(props) {
