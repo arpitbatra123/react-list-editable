@@ -77,6 +77,10 @@ You have to pass the following props to this component:
 
 You can see this component in action [here](https://react-list-editable.netlify.com/). The code for this demo can be found in the `demo` folder of this repository.
 
+## <u>Codesandbox</u>
+
+[![Edit react-list-editable-demo](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/react-list-editable-demo-lk5fl?fontsize=14&hidenavigation=1&theme=dark)
+
 ## <u>Thanks</u>
 
 - Contributions are welcome 
