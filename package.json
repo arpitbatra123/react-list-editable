@@ -10,7 +10,7 @@
   "scripts": {
     "build": "webpack",
     "prepublish": "webpack",
-    "publish": "np"
+    "release": "np"
   },
   "keywords": [
     "react"
