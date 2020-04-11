@@ -2,6 +2,8 @@ import React, {Component} from 'react';
 import PropTypes from 'prop-types';
 import close from '../assets/close.svg'
 
+import './react-list-editable.scss'
+
 class EditableList extends Component {
     constructor(props) {
         super(props);
