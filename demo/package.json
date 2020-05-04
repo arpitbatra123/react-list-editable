@@ -17,6 +17,6 @@
     "sass": "^1.26.5"
   },
   "dependencies": {
-    "react-list-editable": "0.0.4"
+    "react-list-editable": "^0.1.0"
   }
 }
