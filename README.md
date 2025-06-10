@@ -1,88 +1,67 @@
-[![Netlify Status](https://api.netlify.com/api/v1/badges/c17e1d8c-c9bf-470e-98d0-5253ed2d7cf6/deploy-status)](https://app.netlify.com/sites/react-list-editable/deploys)
+# React List Editable
 
-# react-list-editable
+A simple, editable list component for React.
 
-A [React](https://reactjs.org) component to render editable lists
+## Installation
 
-## <u>Installation and Usage</u>
+Install the package from npm:
 
-The easiest way to use react-list-editable is to install it from npm and build it into your app with Webpack.
-
-```shell
-npm i react-list-editable
+```bash
+npm install react-list-editable
 ```
 
-The use it in your app:
+## Usage
 
-Import this component in your app using :
+Import the component and its styles into your application.
 
-```js
+```jsx
+import React, { useState } from 'react';
 import EditableList from 'react-list-editable';
+import 'react-list-editable/dist/style.css';
+
+const MyComponent = () => {
+	const [items, setItems] = useState(['🍎 Apple', '🍌 Banana', '🥕 Carrot']);
+
+	return (
+		<EditableList
+			list={items}
+			onListChange={setItems}
+			placeholder="Add a new item"
+		/>
+	);
+};
+
+export default MyComponent;
 ```
 
-Don't forget to import the styles as well: ⚠️
+## Props
 
-```js
-import 'react-list-editable/lib/react-list-editable.css';
+| Prop           | Type     | Default         | Description                                                                  |
+| -------------- | -------- | --------------- | ---------------------------------------------------------------------------- |
+| `list`         | `array`  | `[]`            | The array of strings to display in the list.                                 |
+| `onListChange` | `func`   | **Required**    | A callback function that receives the updated list whenever a change occurs. |
+| `placeholder`  | `string` | `'Press Enter'` | The placeholder text for an empty input field.                               |
+
+## Development
+
+To run the demo application locally:
+
+1.  Clone the repository.
+2.  Install dependencies: `npm install`
+3.  Start the development server: `npm run dev`
+
+This will open the demo page in your browser.
+
+## Building the Library
+
+To build the library for production, run:
+
+```bash
+npm run build
 ```
 
-See below for an extended example: 
+The output will be generated in the `dist` directory.
 
-```js
-import React, { Component } from 'react';
+## License
 
-import EditableList from 'react-list-editable';
-import 'react-list-editable/lib/react-list-editable.css';
-
-export default class Example extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      list: ['🥳 Partying', '👩🏻‍🎨 Painting', '🛌🏻 Sleeping']
-    };
-  }
-  
-  onListChange(newList) {
-    this.setState({
-      list: newList
-    });
-  }
-  
-  render() {
-    return (
-      <div className='app-container'>
-        <EditableList
-          list={this.state.list}
-          onListChange={this.onListChange.bind(this)}
-          placeholder='Enter a value'
-        />
-      </div>
-    );
-  }
-}
-
-```
-
-
-
-## <u>Props</u>
-
-You have to pass the following props to this component:
-
-- `list` -  The list of elements to edit. This is a required prop, otherwise what will you edit in the editable list ? 🤷🏻‍♂️
-- `onListChange` - A function which, on any updation of the list , will recieve the updated list as an argument.
-- `placeholder` - The placeholder to show in the field for adding a new element to a list.
-
-## <u>Demo</u>
-
-You can see this component in action [here](https://react-list-editable.netlify.com/). The code for this demo can be found in the `demo` folder of this repository.
-
-## <u>Codesandbox</u>
-
-[![Edit react-list-editable-demo](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/react-list-editable-demo-lk5fl?fontsize=14&hidenavigation=1&theme=dark)
-
-## <u>Thanks</u>
-
-- Contributions are welcome 
-- Questions? Ask away [@arpitbatra123](https://twitter.com/arpitbatra123) on twitter.
-- The component is built using webpack, the demo using parcel and is hosted on Netlify. A big :heart: to these projects
+MIT
