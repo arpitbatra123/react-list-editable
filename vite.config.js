@@ -31,6 +31,7 @@ export default defineConfig(({ command }) => {
 							react: 'React',
 							'react-dom': 'ReactDOM',
 							'prop-types': 'PropTypes',
+							'react/jsx-runtime': 'ReactJsxRuntime',
 						},
 					},
 				},
